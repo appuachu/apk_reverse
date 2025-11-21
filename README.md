@@ -1,37 +1,56 @@
-📘 README – Reverse Engineering & APK Cracking Demo
-🎯 Purpose of This Project
+# 📘 README – Reverse Engineering & APK Cracking Demo
 
-This Android app is created only for educational and cybersecurity training purposes.
-The goal is to teach students:
+## 🎯 Purpose of This Project
+This Android application is created **only for educational and cybersecurity training purposes**.  
+The goal of this demo is to help students learn:
 
-How Android apps can be reverse-engineered
+- 🔍 How Android apps can be reverse-engineered  
+- 🔑 How passwords and logic can be exposed using tools  
+- 📝 How to edit and modify smali code  
+- 🛠️ How to rebuild and sign an APK  
+- 🛡️ Why secure coding practices are important  
 
-How passwords and logic can be exposed using tools
+By completing this practical exercise, students will understand **how attackers analyze and modify Android apps**, allowing them to build **more secure applications** in the future.
 
-How smali code can be modified
+---
 
-How to rebuild and sign an APK
+## 🧪 What the App Does
+When the app is opened:
 
-Why secure coding practices are important
+1. It asks the user to enter a **password**.  
+2. If the password is **correct**, it shows:  
+   **✅ Congratulations**
+3. If the password is **incorrect**, it shows:  
+   **❌ Invalid Password**
 
-This demo helps students understand how attackers think, so they can write more secure applications in the future.
+### 🔐 The correct password for this demo:
+**`password123@#`**
 
-🧪 What the App Does
+Students must reverse engineer the APK to:
 
-When you open the app:
+- ✔ Find the correct password inside the code  
+**OR**
+- ✔ Modify the smali logic so it **always shows “Congratulations”** (bypass the password check)
 
-It asks you to enter a password.
+---
 
-If the password is correct → it shows "Congratulations"
+## 🛠️ Tools You Will Use
+| Tool | Purpose |
+|------|---------|
+| **jadx-gui** | View Java source code & find password logic |
+| **apktool** | Decompile & recompile the APK |
+| **smali** | Edit low-level Android bytecode |
+| **apksigner** | Sign the modified APK so it can be installed |
 
-If the password is wrong → it shows "Invalid Password"
+---
 
-Students must reverse engineer the app to:
+## 📚 Learning Tasks
 
-Find the correct password - password is password123@#
+### **1. Reverse the APK with JADX**
+- Open the APK in **jadx-gui**
+- Search for:
+  - The string `"password123@#"`
+  - `"Invalid Password"`
+  - `"Congratulations"`
 
-Or modify the code so it always shows “Congratulations”
 
-Find the correct password
-
-Or modify the code so it always shows “Congratulations”
