@@ -44,13 +44,3 @@ Students must reverse engineer the APK to:
 
 ---
 
-## 📚 Learning Tasks
-
-### **1. Reverse the APK with JADX**
-- Open the APK in **jadx-gui**
-- Search for:
-  - The string `"password123@#"`
-  - `"Invalid Password"`
-  - `"Congratulations"`
-
-
