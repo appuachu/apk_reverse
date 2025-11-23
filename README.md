@@ -23,9 +23,6 @@ When the app is opened:
 3. If the password is **incorrect**, it shows:  
    **❌ Invalid Password**
 
-### 🔐 The correct password for this demo:
-**`password123@#`**
-
 Students must reverse engineer the APK to:
 
 - ✔ Find the correct password inside the code  
