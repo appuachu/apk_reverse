@@ -1,0 +1,12 @@
+wget https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar
+
+wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+
+
+chmod +x apktool
+
+
+sudo mv apktool apktool_2.9.3.jar /usr/local/bin/
+
+
+sudo ln -sf /usr/local/bin/apktool_2.9.3.jar /usr/local/bin/apktool.jar
